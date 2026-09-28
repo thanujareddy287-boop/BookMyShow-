@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎬 Movie Booking</h1>
+
+    <div class="movie">
+        <h2>Avengers: Endgame</h2>
+        <p>₹200 per seat</p>
+        <button id="bookBtn">Book Tickets</button>
+    </div>
+
+    <div id="bookingWindow" class="modal">
+        <div class="booking-box">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2>Book Your Tickets</h2>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" min="1" max="10" value="1">
+
+            <p>Total Price: ₹<span id="total">200</span></p>
+
+            <button id="confirmBtn">Confirm Booking</button>
+        </div>
+    </div>
+
+    <div id="successWindow" class="modal">
+        <div class="booking-box">
+            <h2>✅ Booking Successful!</h2>
+            <p>Your movie ticket has been booked.</p>
+            <button id="doneBtn">Done</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
